@@ -89,6 +89,18 @@ contactUser:builder.mutation({
         }
       }
     }),
+    emailverifyOtp:builder.mutation({
+                   query:(actualData)=>{
+                                return {
+                                    url:'otp/',
+                                    method:'POST',
+                                    body:actualData,
+                                    headers:{
+                                        'Content-type':'application/json',
+                                    }
+                                }
+                              }
+                            }),
   }),
 })
-export const { useRegisterUserMutation, useLoginUserMutation, useGetLoginUserQuery, useForgotUserMutation, useSendResetMailMutation,useResetUserPasswordMutation, useContactUserMutation } = userAuthApi
+export const { useRegisterUserMutation, useLoginUserMutation, useGetLoginUserQuery, useForgotUserMutation, useSendResetMailMutation,useResetUserPasswordMutation, useContactUserMutation, useEmailverifyOtpMutation } = userAuthApi
