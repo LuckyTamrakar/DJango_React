@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from './images/MFW.png'
+import logo from './images/mfwlogo.png'
 import {
 
   Link, useNavigate
