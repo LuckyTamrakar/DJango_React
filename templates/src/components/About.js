@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import logo from './images/MFW.png'
+import logo from './images/mfwlogo.png'
 function About() {
   return (
     <div>
